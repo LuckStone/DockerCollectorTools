@@ -1,0 +1,18 @@
+http://www.sphinx-doc.org/en/stable/invocation.html
+
+https://pypi.python.org/pypi/Sphinx/1.4b1
+
+
+使用文档
+http://www.sphinx-doc.org/en/stable/tutorial.html
+
+1、安装sphinx
+
+    pip install Sphinx
+
+2、创建文档项目
+
+    sphinx-quickstart
+
+3、生成html
+    .\make.bat html
