@@ -2,7 +2,7 @@ User = {
 	'_id':'admin',
 	'password':'badmin',
 	'nick_name':'admin'
-	'avatar':''	
+	'avatar':''
 	'join_time': 1457958007295,
 }
 
@@ -12,16 +12,8 @@ Repository = {
 	'user_id':'admin'
 	'push_time': 1457958007295,
 	'desc':'',
-	'is_public':true,
+	'permission':'public',
 	'delete': 0
-}
-
-Blobs = {
-	'_id':1,
-	'repository':'test',
-	'mediaType':'application/octet-stream'
-	'length':'',
-	'digest':'sha256:03f4658f8b782e12230c1783426bd3bacce651ce582a4ffb6fbbfa2079428ecb'
 }
 
 // 评论
@@ -37,16 +29,27 @@ Comment = {
 
 Tag = {
 	'_id':1,
-	'user_id':'admin'
 	'repository':'ubuntu',
 	'tag_name':'1.0',
-	'size':54345345,
+	'user_id':'',
 	"digest": "sha256:fea8895f450959fa676bcc1df0611ea93823a735a01205fd8622846041d0c7cf",
 	'create_time': 13423423423,
+	'desc':'',
+	'docker_file':''
+	'delete':0,    // 0表示未删除，其他值表示已删除
+}
+
+Image = {
+	'_id':"sha256:fea8895f450959fa676bcc1df0611ea93823a735a01205fd8622846041d0c7cf",
+	'user_id':'admin'
+	'repository':'ubuntu',
+	'size':54345345,
+	'create_time': 13423423423,
+	"addr": "d5555f815d2b:5000",
+	"instanceID": "7f58de75-0a72-4ce4-9a86-24f22b0925fd",
 	'delete':0,    // 0表示未删除，其他值表示已删除
 	'pull_num':0,  // 问题：怎么计数
 }
-
 
 Layer = {
 	"_id": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4",
@@ -70,6 +73,7 @@ Namespace = {
 	'_id': 'appsoar',  // 全局唯一
 	'owner_id':'',
 	'desc':'',
+	'permission':'public'
 	'create_time': 13423423423,
 }
 
