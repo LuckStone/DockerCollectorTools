@@ -1,0 +1,19 @@
+PERMISSION_DENIED_ERR  = 10108                # 用户权限不够
+
+// DB_ERROR
+DATABASE_EXCEPT_ERR    = 10501                # 数据库异常
+NO_SUCH_RECORD_ERR     = 10503                # 记录不存在
+IDENTITY_KEY_NOT_EXIST_ERR = 10509            # 记录信息中没有ID
+FILTER_IS_INVALID_ERR = 10510                 # 过滤条件不合法
+
+
+INVALID_PARAMETERS_ERR = 11001               # 参数错误
+NO_IMPLEMENT_INTERFACE_ERR = 11002           # 没有实现对应的接口
+
+
+INVALID_USER_INFO_ERR = 12001                # 用户信息不完整
+USER_EXIST_ALREADY_ERR = 12002               # 用户已经存在
+INVALID_GROUP_INFO_ERR = 12003               # 分组信息不完整，
+GROUP_EXIST_ALREADY_ERR = 12004              # 分组已经存在
+INVALID_NAMESPACE_INFO_ERR = 12005           # 命名空间信息无效
+NAMESPACE_EXIST_ALREADY_ERR = 12006          # 命名空间已经存在
