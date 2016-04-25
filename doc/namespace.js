@@ -1,9 +1,17 @@
 User = {
 	'_id':'admin',
 	'password':'badmin',
-	'nick_name':'admin'
-	'avatar':''
+	'nick_name':'admin',
+	'avatar':'',
+	'desc':'',
+	'source':'local',
 	'join_time': 1457958007295,
+	'ldap_server':'',
+	'ldap_port':'',
+	'ldap_tls':'',
+	'ldap_user':'',
+	'ldap_password':'',
+	'ldap_dn':''	
 }
 
 Repository = {
@@ -12,7 +20,7 @@ Repository = {
 	'user_id':'admin'
 	'push_time': 1457958007295,
 	'desc':'',
-	'permission':'public',
+	'permission':'public',  // 权限受命名空间控制
 	'delete': 0
 }
 
@@ -63,7 +71,6 @@ Layer = {
 Group = {
 	'_id':1,
 	'group_name':'dev',
-	'namespace':'appsoar',
 	'create_time': 13423423423,
 	'desc':'',
 }
@@ -80,7 +87,6 @@ Namespace = {
 User_Group = {
 	'_id':1,
 	'user_id':1,
-	'namespace':'appsoar',
 	'group_id':'',
 	'join_time': 13423423423,
 }
@@ -89,4 +95,5 @@ Group_Namespace = {
 	'_id':1,
 	'group_id':1,  
 	'namespace':'appsoar',
+	'control':1
 }
